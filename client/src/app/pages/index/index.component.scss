@@ -1,0 +1,32 @@
+:host > .banner {
+    width: 100%;
+    height: 15rem;
+    background: #43a047;
+    
+    overflow: hidden;
+    position: relative;
+
+    & > .image {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+
+        min-width: 320px;
+        width: calc(100% - 20rem);
+        max-width: 512px;
+        height: 100%;
+        
+        background-image:
+            linear-gradient(
+                to right,
+                #43a047ff 0%,
+                #43a04700 50%
+            ),
+            url('/assets/images/main-qingque.jpg');
+
+        background-blend-mode: normal;
+        background-position-x: 0%;
+        background-position-y: 14%;
+        background-size: 125%;
+    }
+}

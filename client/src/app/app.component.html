@@ -1,6 +1,18 @@
 <mat-toolbar
 color="primary">
+    <button mat-icon-button
+    type="button">
+        <mat-icon>menu</mat-icon>
+    </button>
 </mat-toolbar>
 
-<router-outlet>
-</router-outlet>
+<mat-sidenav-container>
+    <mat-sidenav
+    [opened]="this.opened">
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet>
+        </router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
